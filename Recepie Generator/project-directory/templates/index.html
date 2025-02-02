@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- 
+    Meta Information 
+    - Sets character encoding to UTF-8 for better text rendering.
+    - Enables responsive design with the viewport meta tag.
+  -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Recipe Generator</title> <!-- Webpage Title -->
+
+  <!-- External CSS Stylesheet -->
+  <link rel="stylesheet" href="../css/index-style.css">
+
+  <style>
+    /* 
+      Full height and width for the page to ensure content can scroll properly.
+    */
+    html, body {
+      height: 100%;
+      width: 100%;
+      overflow: auto; /* Enables scrolling if content exceeds the screen */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 
+    Navigation Bar 
+    - Displays the website logo and navigation links.
+  -->
+  <header class="navbar">
+    <div class="logo">SpiceBox</div> <!-- Website Logo -->
+
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>  <!-- Home Link -->
+        <li><a href="#recipes">Recipes</a></li>  <!-- Recipes Section Link -->
+        <li><a href="#about">About</a></li>  <!-- About Section Link -->
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 
+    Hero Section (Main Banner) 
+    - Contains a welcoming message with a call-to-action button.
+  -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Welcome to SpiceBox</h1>  <!-- Main Heading -->
+      <p>Generate personalized recipes based on your preferences</p>  <!-- Short Description -->
+      
+      <!-- Button that redirects users to the recipe form section -->
+      <button class="cta-button" onclick="window.location.href='#recipes'">Get Started</button>
+    </div>
+  </section>
+
+  <!-- 
+    Recipe Form Section 
+    - Allows users to enter ingredients and preferences for generating recipes.
+  -->
+  <section id="recipes" class="recipe-form">
+    <div class="container">
+      <h2>Find Your Perfect Recipe</h2>  <!-- Section Heading -->
+
+      <!-- Recipe Input Form -->
+      <form id="recipeForm" action="/recipeStream" method="get">
+        <!-- Input for entering ingredients -->
+        <input type="text" name="ingredients" placeholder="Enter ingredients (comma separated)" />
+
+        <!-- Input for selecting cuisine preference -->
+        <input type="text" name="cuisine" placeholder="Cuisine" />
+
+        <!-- Input for defining cooking time (in minutes) -->
+        <input type="number" name="cookingTime" placeholder="Cooking Time (in minutes)" min="1" />
+
+        <!-- Dropdown for selecting recipe complexity -->
+        <select name="complexity">
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+
+        <!-- Dropdown for selecting meal type -->
+        <select name="mealType">
+          <option value="lunch">Lunch</option>
+          <option value="dinner">Dinner</option>
+          <option value="breakfast">Breakfast</option>
+          <option value="brunch">Brunch</option>
+        </select>
+
+        <!-- Submit Button -->
+        <button type="submit" id="submitButton">Generate Recipe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- 
+    About Section 
+    - Provides information about the SpiceBox recipe generator.
+  -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About SpiceBox</h2>  <!-- Section Heading -->
+      <p>Your ultimate recipe generator, helping you create delicious meals based on your preferences and pantry items.</p>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>© 2025 SpiceBox. All rights reserved.</p>
+  </footer>
+
+  <!-- 
+    Error Overlay 
+    - Displays an error message if something goes wrong.
+  -->
+  <div id="errorOverlay">
+    <div class="message">
+      An error occurred while fetching the recipe. Please try again.
+      <button class="close-btn" onclick="closeErrorOverlay()">Close</button>
+    </div>
+  </div>
+
+  <!-- External JavaScript File -->
+  <script src="path/to/your/script.js"></script>
+
+</body>
+</html>

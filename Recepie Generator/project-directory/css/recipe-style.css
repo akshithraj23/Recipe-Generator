@@ -1,0 +1,60 @@
+/* Center the content vertically and horizontally */
+.recipe-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  text-align: center;
+  background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
+  color: white;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Styling for the main heading with fade-in animation */
+.recipe-container h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  animation: fadeIn 1.5s ease-in-out; /* Apply fade-in animation */
+}
+
+/* Paragraph styling with background transparency & animation */
+.recipe-container p {
+  font-size: 1.2rem;
+  background: rgba(255, 255, 255, 0.2); /* Light translucent background */
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin: 10px 0;
+  display: inline-block; /* Ensures background wraps text neatly */
+  animation: slideIn 1.5s ease-out; /* Apply slide-in animation */
+}
+
+/* Fade-in animation for smooth appearance */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px); /* Starts slightly above */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Moves into place */
+  }
+}
+
+/* Slide-in animation from the left */
+@keyframes slideIn {
+  from {
+    transform: translateX(-50px); /* Starts off-screen */
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0); /* Moves into place */
+    opacity: 1;
+  }
+}
+
+/* Hover effect: Slightly enlarges text for emphasis */
+.recipe-container p:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+}

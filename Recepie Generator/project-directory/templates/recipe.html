@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" /> <!-- Defines character encoding -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- Responsive design -->
+  <title>Recipe Results</title>
+  <link rel="stylesheet" href="../css/recipe-style.css"> <!-- External CSS file -->
+</head>
+
+<body>
+  <div class="recipe-container"> <!-- Main content container -->
+    <h1>Generated Recipe</h1>
+
+    <!-- Recipe details dynamically populated using template variables -->
+    <p><strong>Ingredients:</strong> {{ recipe.ingredients }}</p>
+    <p><strong>Meal Type:</strong> {{ recipe.meal_type }}</p>
+    <p><strong>Cuisine:</strong> {{ recipe.cuisine }}</p>
+    <p><strong>Cooking Time:</strong> {{ recipe.cooking_time }} minutes</p>
+    <p><strong>Complexity:</strong> {{ recipe.complexity }}</p>
+  </div>
+</body>
+
+</html>
