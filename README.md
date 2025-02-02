@@ -1,8 +1,11 @@
 Recipe Generator API - SpiceBox
+
 🌟 Introduction
 In today’s fast-paced world, people often struggle to decide what to cook based on the ingredients available in their kitchen. The Recipe Generator API (SpiceBox) is an AI-powered tool designed to solve this problem by generating personalized recipes in real time.
 
+
 🔥 Why is it Needed?
+
 Many people face common cooking dilemmas:
 ✅ Limited Ingredients – Not sure what to cook with what’s available?
 ✅ Time Constraints – Need a quick and easy meal idea?
@@ -12,6 +15,7 @@ Many people face common cooking dilemmas:
 SpiceBox provides an intelligent solution by offering recipe suggestions tailored to user preferences, making meal planning easy and enjoyable.
 
 ⚙️ How It Works
+
 The Recipe Generator API uses AI-driven text generation to create unique recipes based on user input. The process involves:
 
 1️⃣ User Input: The user provides details such as ingredients, meal type, cuisine preference, cooking time, and complexity.
