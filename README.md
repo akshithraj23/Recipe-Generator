@@ -1,10 +1,12 @@
 Recipe Generator API - SpiceBox
 
+
 🌟 Introduction
 The Recipe Generator API is a Flask-based web application that allows users to generate personalized recipes based on their input. 
 It utilizes AI-powered natural language processing (NLP) to create dynamic and unique recipes by considering various parameters such as ingredients, meal type, cuisine preference, cooking time, and complexity level.
 
 This API enables real-time streaming of AI-generated recipes, making the process interactive and engaging for users. The recipes are created using OpenAI's language model, which ensures high-quality, human-like responses.
+
 
 
 🔥 Why is it Needed?
@@ -22,7 +24,10 @@ Many people face common cooking dilemmas:
 
 SpiceBox provides an intelligent solution by offering recipe suggestions tailored to user preferences, making meal planning easy and enjoyable.
 
-Methodology
+
+
+
+🚀Methodology
 
 The Recipe Generator API follows a structured approach to dynamically create and deliver personalized recipes. The main methodologies used include:
 
@@ -56,6 +61,9 @@ Proper error-handling mechanisms ensure smooth API performance, even when there 
 Debugging logs are included to track issues and improve reliability.
 Security best practices are followed to protect sensitive data, such as API keys.
 
+
+
+
 ⚙️ How It Works
 
 1️⃣ User Input:
@@ -79,6 +87,8 @@ The generated recipe is displayed in a well-structured format on the frontend.
 If an error occurs, users receive a friendly message, and the system suggests trying again.
 
 
+
+
 🚀 Key Features
 
 🔹 AI-Powered Recipe Generation – Generates personalized recipes on demand.
@@ -91,6 +101,9 @@ If an error occurs, users receive a friendly message, and the system suggests tr
 
 🔹 Interactive & User-Friendly UI – Simple, clean, and engaging design.
 
+
+
+
 🛠️ Technology Stack
 
 💻 Frontend: HTML, CSS, JavaScript (for UI and real-time updates)
@@ -101,6 +114,9 @@ If an error occurs, users receive a friendly message, and the system suggests tr
 
 🔗 API Handling: Flask API with CORS support
 
+
+
+
 📌 How to Use
 
 1️⃣ Open the web application.
@@ -110,6 +126,9 @@ If an error occurs, users receive a friendly message, and the system suggests tr
 3️⃣ Click “Generate Recipe” and watch the AI craft a step-by-step recipe in real-time.
 
 4️⃣ View, follow, and enjoy your custom-made meal!
+
+
+
 
 🎯 Conclusion
 The Recipe Generator API is an intelligent and user-friendly solution that transforms how people discover and create recipes. By leveraging Flask, OpenAI, and real-time streaming, it delivers a seamless and engaging experience, making cooking more fun, efficient, and personalized.
